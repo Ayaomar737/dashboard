@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> مشروع الملكية</title>
+    <link href="image/favicon.png" rel="icon" />
+
+  
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- datatables -->
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.min.css">
+
+    <!-- dropfiy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- english style -->
+    <!-- <link rel="stylesheet" href="css/ltr.css"> -->
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <div class="image-logo d-flex justify-content-center">
+            <img src="image/logo.png" alt="no-logo">
+        </div>
+        <hr class="hr-logo">
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu fixed-menu">
+            <li>
+                <a href="index.html" class="link-sidebar active">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M6.33344 17.1844H15.6668C16.6486 17.1844 17.4446 16.3885 17.4446 15.4066V8.73998L11.0001 4.29553L4.55566 8.73998V15.4066C4.55566 16.3885 5.3516 17.1844 6.33344 17.1844Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.99957 14.0724C8.99957 13.0906 9.7955 12.2947 10.7773 12.2947H11.2218C12.2036 12.2947 12.9996 13.0906 12.9996 14.0724V17.1836H8.99957V14.0724Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                     
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li>
+                <a href="report-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M16.3332 8.29529H12.5554V4.51751M14.7777 17.1842H7.22211C6.24027 17.1842 5.44434 16.3882 5.44434 15.4064V6.07307C5.44434 5.09123 6.24027 4.29529 7.22211 4.29529H12.7777L16.5554 8.07307V15.4064C16.5554 16.3882 15.7595 17.1842 14.7777 17.1842Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                     
+                    <span>إدارة التقارير</span>
+                </a>
+            </li>
+            <li>
+                <a href="notification-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M8.33333 14.962C8.33333 14.962 8.33333 17.1842 11 17.1842C13.6667 17.1842 13.6667 14.962 13.6667 14.962M15.6667 8.96195V10.7397L17.4444 14.5175H4.55556L6.33333 10.7397V8.96195C6.33333 6.38463 8.42267 4.29529 11 4.29529C13.5773 4.29529 15.6667 6.38463 15.6667 8.96195Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                   
+                    <span>إدارة التنبيهات</span>
+                </a>
+            </li>
+            <li>
+                <a href="locations-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M8.55566 4.29529L4.55566 6.07307V17.1842L8.55566 15.4064M8.55566 4.29529V15.4064M8.55566 4.29529L13.4446 6.07307M8.55566 15.4064L13.4446 17.1842M13.4446 6.07307L17.4446 4.29529V15.4064L13.4446 17.1842M13.4446 6.07307V17.1842" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                    
+                    <span>إدارة المواقع الجغرافية</span>
+                </a>
+            </li>
+            <li>
+                <a href="audit-logs.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M16.3332 8.29529H12.5554V4.51751M8.99989 13.6286H12.9999M8.99989 10.962H12.9999M14.7777 17.1842H7.22211C6.24027 17.1842 5.44434 16.3882 5.44434 15.4064V6.07307C5.44434 5.09123 6.24027 4.29529 7.22211 4.29529H12.7777L16.5554 8.07307V15.4064C16.5554 16.3882 15.7595 17.1842 14.7777 17.1842Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                  
+                    <span>سجلات التدقيق</span>
+                </a>
+            </li>
+            <li>
+                <a href="user-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M14.3333 12.5175C16.1811 12.5175 16.9379 14.4267 17.2434 15.8028C17.4084 16.546 16.8074 17.1842 16.0461 17.1842H15.2222M13.4444 9.18418C14.7945 9.18418 15.6667 8.08976 15.6667 6.73973C15.6667 5.3897 14.7945 4.29529 13.4444 4.29529M12.0829 17.1842H5.4726C4.97082 17.1842 4.57599 16.7679 4.67598 16.2762C4.95203 14.9186 5.8536 12.5175 8.77777 12.5175C11.7019 12.5175 12.6035 14.9186 12.8796 16.2762C12.9795 16.7679 12.5847 17.1842 12.0829 17.1842ZM11.2222 6.73973C11.2222 8.08976 10.1278 9.18418 8.77777 9.18418C7.42774 9.18418 6.33332 8.08976 6.33332 6.73973C6.33332 5.3897 7.42774 4.29529 8.77777 4.29529C10.1278 4.29529 11.2222 5.3897 11.2222 6.73973Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                   
+                    <span>إدارة المستخدمين</span>
+                </a>
+            </li>
+            <li>
+                <a href="tasks-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M13.8889 17.1842L11 15.4064L8.11111 17.1842M6.33334 14.5175H15.6667C16.6485 14.5175 17.4444 13.7216 17.4444 12.7397V6.07307C17.4444 5.09123 16.6485 4.29529 15.6667 4.29529H6.33333C5.3515 4.29529 4.55556 5.09123 4.55556 6.07307V12.7397C4.55556 13.7216 5.3515 14.5175 6.33334 14.5175Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                    
+                    <span>إدارة المهام</span>
+                </a>
+            </li>
+            
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main home">
+        
+        <div class="main-content">
+            <div class="main-header sticky-top mb-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="image-table" src="image/image1.png" alt="no-image">
+                            <div>
+                                <h6 class="name-table d-flex align-items-center">عبد الله الشمري</h6>
+                                <p class="fs-12 text-secondary">مدير النظام</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="header-icon">
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <li class="nav-item user">
+                                        <a class="nav-link position-relative text-center" href="notification.html">
+                                            <img class="h-24" src="image/bell.png" alt="no-icon">
+                                            <span class="position-absolute top-30 start-80 translate-middle badge notification">
+                                                2
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </a>
+                                      </li>
+                                      <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="image-icon" src="image/notification-01.png" alt="no-icon">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li class="p-2 d-flex justify-content-between">
+                                            <h5>الاشعارات</h5>
+                                            <p class="head-notification">علامة كمقرؤة للكل</p>
+                                          </li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                        </ul>
+                                      </li> -->
+                                </ul>
+                            </div>
+                            <div class="mobile-toggle me-3">
+                                <i class="fa-solid fa-bars fs-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-border-shape mt-16">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 mb-3">
+                        <div class="card-home">
+                            <h2 class="text-primary fw-700">1,512</h1>
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-14 text-secondary">عدد التقارير</p>
+                                <div class="status-true">
+                                    <img class="h-16" src="image/arrow-up-right.png" alt="no-icon">
+                                    <p>34.1%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mb-3">
+                        <div class="card-home">
+                            <h2 class="text-brown fw-700">637</h1>
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-14 text-secondary">عدد التقارير الجديدة</p>
+                                <div class="status-true">
+                                    <img class="h-16" src="image/arrow-up-right.png" alt="no-icon">
+                                    <p>4.1%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mb-3">
+                        <div class="card-home">
+                            <h2 class="text-red fw-700">1,456</h1>
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-14 text-secondary">عدد التقارير المرفوضة</p>
+                                <div class="status-false">
+                                    <img class="h-16" src="image/arrow-down-right.png" alt="no-icon">
+                                    <p>4.1%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12 mb-3">
+                        <div class="">
+                            <h2 class="text-green fw-700">6,243</h1>
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-14 text-secondary">عدد التقارير المعتمدة</p>
+                                <div class="status-normal">
+                                    <img class="h-16" src="image/arrow-right.png" alt="no-icon">
+                                    <p>0.0%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape"></div>
+            <div class="card-border mt-16">
+                <div class="d-flex justify-content-between">
+                    <h5 class="text-primary">قائمة التقارير</h5>
+                    <div class="d-flex">
+                        <!-- <input class="search form-control me-2" type="search" placeholder="ابحث هنا" aria-label="Search"> -->
+                        <button type="button" class="btn-filter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                <path d="M19.25 5.41992H4.75L9.31174 11.1221C9.59544 11.4767 9.75 11.9173 9.75 12.3715V18.9199C9.75 19.4722 10.1977 19.9199 10.75 19.9199H13.25C13.8023 19.9199 14.25 19.4722 14.25 18.9199V12.3715C14.25 11.9173 14.4046 11.4767 14.6883 11.1221L19.25 5.41992Z" stroke="#857854" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                        </button>
+                    </div>
+                </div>
+                <hr class="hr-card">
+                <div class="scroll">
+                    <table id="example" class="data-table" style="width:100%">
+                        <thead>
+                            <tr>
+                                <td>اسم التقرير</td>
+                                <td>مرسل التقرير</td>
+                                <td>الدور</td>
+                                <td>تاريخ الارسال</td>
+                                <td>حالة التقرير</td>
+                                <td></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="d-flex">
+                                        <div class="icon-table">
+                                            <img src="image/file-icon.png" alt="no-image">
+                                        </div>
+                                        <div class="d-flex flex-column justify-content-center">
+                                            <h6 class="name-table mb-2">اسم التقرير</h6>
+                                            <p class="file-size">3.4 MB</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="d-flex">
+                                        <img class="image-table" src="image/image1.png" alt="no-image">
+                                        <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="table-info">مشرف</div>
+                                </td>
+                                <td>
+                                    <div class="table-info">12 مايو 2024</div>
+                                </td>
+                                <td>
+                                    <span class="status-new">
+                                        جديد
+                                    </span>
+                                </td>
+                                <td>
+                                    <a href="report-details.html" class="view">
+                                        <img class="h-24" src="image/eye-icon.png" alt="no-image">
+                                        عرض
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script> 
+    <script src="js/chart.min.js"></script> 
+    <script src="https://cdn.datatables.net/2.1.2/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.2/js/dataTables.bootstrap5.min.js"></script> 
+    <script src="js/main.js"></script> 
+    <script src="js/plugin.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>

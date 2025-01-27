@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> مشروع الملكية</title>
+    <link href="image/favicon.png" rel="icon" />
+
+  
+   <!-- bootstrap -->
+   <link rel="stylesheet" href="css/all.min.css">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+
+   <!-- datatables -->
+   <link rel="stylesheet" href="https://cdn.datatables.net/2.1.2/css/dataTables.bootstrap5.min.css">
+
+    <!-- dropfiy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css" integrity="sha512-EZSUkJWTjzDlspOoPSpUFR0o0Xy7jdzW//6qhUkoZ9c4StFkVsp9fbbd0O06p9ELS3H486m4wmrCELjza4JEog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- english style -->
+    <!-- <link rel="stylesheet" href="css/ltr.css"> -->
+
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar" class="sidebar">
+        <div class="image-logo d-flex justify-content-center">
+            <img src="image/logo.png" alt="no-logo">
+        </div>
+        <hr class="hr-logo">
+        <!-- SIDEBAR MENU -->
+        <ul class="sidebar-menu fixed-menu">
+            <li>
+                <a href="index.html" class="link-sidebar active">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M6.33344 17.1844H15.6668C16.6486 17.1844 17.4446 16.3885 17.4446 15.4066V8.73998L11.0001 4.29553L4.55566 8.73998V15.4066C4.55566 16.3885 5.3516 17.1844 6.33344 17.1844Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.99957 14.0724C8.99957 13.0906 9.7955 12.2947 10.7773 12.2947H11.2218C12.2036 12.2947 12.9996 13.0906 12.9996 14.0724V17.1836H8.99957V14.0724Z" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                     
+                    <span>الرئيسية</span>
+                </a>
+            </li>
+            <li>
+                <a href="report-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M16.3332 8.29529H12.5554V4.51751M14.7777 17.1842H7.22211C6.24027 17.1842 5.44434 16.3882 5.44434 15.4064V6.07307C5.44434 5.09123 6.24027 4.29529 7.22211 4.29529H12.7777L16.5554 8.07307V15.4064C16.5554 16.3882 15.7595 17.1842 14.7777 17.1842Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                     
+                    <span>إدارة التقارير</span>
+                </a>
+            </li>
+            <li>
+                <a href="notification-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M8.33333 14.962C8.33333 14.962 8.33333 17.1842 11 17.1842C13.6667 17.1842 13.6667 14.962 13.6667 14.962M15.6667 8.96195V10.7397L17.4444 14.5175H4.55556L6.33333 10.7397V8.96195C6.33333 6.38463 8.42267 4.29529 11 4.29529C13.5773 4.29529 15.6667 6.38463 15.6667 8.96195Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                   
+                    <span>إدارة التنبيهات</span>
+                </a>
+            </li>
+            <li>
+                <a href="locations-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M8.55566 4.29529L4.55566 6.07307V17.1842L8.55566 15.4064M8.55566 4.29529V15.4064M8.55566 4.29529L13.4446 6.07307M8.55566 15.4064L13.4446 17.1842M13.4446 6.07307L17.4446 4.29529V15.4064L13.4446 17.1842M13.4446 6.07307V17.1842" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                    
+                    <span>إدارة المواقع الجغرافية</span>
+                </a>
+            </li>
+            <li>
+                <a href="audit-logs.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M16.3332 8.29529H12.5554V4.51751M8.99989 13.6286H12.9999M8.99989 10.962H12.9999M14.7777 17.1842H7.22211C6.24027 17.1842 5.44434 16.3882 5.44434 15.4064V6.07307C5.44434 5.09123 6.24027 4.29529 7.22211 4.29529H12.7777L16.5554 8.07307V15.4064C16.5554 16.3882 15.7595 17.1842 14.7777 17.1842Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                  
+                    <span>سجلات التدقيق</span>
+                </a>
+            </li>
+            <li>
+                <a href="user-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M14.3333 12.5175C16.1811 12.5175 16.9379 14.4267 17.2434 15.8028C17.4084 16.546 16.8074 17.1842 16.0461 17.1842H15.2222M13.4444 9.18418C14.7945 9.18418 15.6667 8.08976 15.6667 6.73973C15.6667 5.3897 14.7945 4.29529 13.4444 4.29529M12.0829 17.1842H5.4726C4.97082 17.1842 4.57599 16.7679 4.67598 16.2762C4.95203 14.9186 5.8536 12.5175 8.77777 12.5175C11.7019 12.5175 12.6035 14.9186 12.8796 16.2762C12.9795 16.7679 12.5847 17.1842 12.0829 17.1842ZM11.2222 6.73973C11.2222 8.08976 10.1278 9.18418 8.77777 9.18418C7.42774 9.18418 6.33332 8.08976 6.33332 6.73973C6.33332 5.3897 7.42774 4.29529 8.77777 4.29529C10.1278 4.29529 11.2222 5.3897 11.2222 6.73973Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                   
+                    <span>إدارة المستخدمين</span>
+                </a>
+            </li>
+            <li>
+                <a href="tasks-mangement.html" class="link-sidebar">
+                    <svg class="sidebar-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 22 22" fill="none">
+                        <path d="M13.8889 17.1842L11 15.4064L8.11111 17.1842M6.33334 14.5175H15.6667C16.6485 14.5175 17.4444 13.7216 17.4444 12.7397V6.07307C17.4444 5.09123 16.6485 4.29529 15.6667 4.29529H6.33333C5.3515 4.29529 4.55556 5.09123 4.55556 6.07307V12.7397C4.55556 13.7216 5.3515 14.5175 6.33334 14.5175Z" stroke="#565A5D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>                    
+                    <span>إدارة المهام</span>
+                </a>
+            </li>
+            
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+
+    <!-- MAIN CONTENT -->
+    <div class="main home">
+        
+        <div class="main-content">
+            <div class="main-header sticky-top mb-2">
+                <div class="container">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <img class="image-table" src="image/image1.png" alt="no-image">
+                            <div>
+                                <h6 class="name-table d-flex align-items-center">عبد الله الشمري</h6>
+                                <p class="fs-12 text-secondary">مدير النظام</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="header-icon">
+                                <ul class="navbar-nav d-flex flex-row">
+                                    <li class="nav-item user">
+                                        <a class="nav-link position-relative text-center" href="notification.html">
+                                            <img class="h-24" src="image/bell.png" alt="no-icon">
+                                            <span class="position-absolute top-30 start-80 translate-middle badge notification">
+                                                2
+                                                <span class="visually-hidden">unread messages</span>
+                                            </span>
+                                        </a>
+                                      </li>
+                                      <!-- <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <img class="image-icon" src="image/notification-01.png" alt="no-icon">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                          <li class="p-2 d-flex justify-content-between">
+                                            <h5>الاشعارات</h5>
+                                            <p class="head-notification">علامة كمقرؤة للكل</p>
+                                          </li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                          <li><hr class="dropdown-divider"></li>
+                                          <li class="p-2"><a class="dropdown-item" href="#">لقد قام احد الطلاب باضافة والده</a></li>
+                                        </ul>
+                                      </li> -->
+                                </ul>
+                            </div>
+                            <div class="mobile-toggle me-3">
+                                <i class="fa-solid fa-bars fs-3"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="breadcrumb mt-4 mb-4">
+                <a href="index.html"><img class="h-24" src="image/home.png" alt="no-icon"></a>
+                <img class="h-24 me-3 ms-3" src="image/icon-breadcrumb.png" alt="no-icon">
+                <a class="link-breadcrumb" href="report-mangement.html">إدارة التنبيهات</a>
+                <img class="h-24 me-3 ms-3" src="image/icon-breadcrumb.png" alt="no-icon">
+                <span class="fs-14 fw-400 text-secondary">تأخر وصول الحافلة إلى الموقع</span>
+            </div>
+            <div class="card-border mt-16">
+                <div class="d-flex justify-content-between">
+                    <h5 class="text-primary">تأخر وصول الحافلة إلى الموقع</h5>
+                </div>
+                <hr class="hr-card">
+                <div class="card-details">
+                    <div>
+                        <h6 class="text-primary">تفاصيل التنبيه</h6>
+                    </div>
+                    <hr class="hr-card">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <p class="text-secondary fs-14 fw-400 mb-2">مرسل التنبيه </p>
+                            <div class="d-flex">
+                                <img class="image-table" src="image/image1.png" alt="no-image">
+                                <h6 class="name-table d-flex align-items-center">محمود ابراهيم القحطاني</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <p class="text-secondary fs-14 fw-400 mb-2"> الاولوية</p>
+                            <div class="table-info text-red">عالية</div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <p class="text-secondary fs-14 fw-400 mb-2">حالة التنبيه</p>
+                            <span class="status-new">
+                                جديد
+                            </span>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 mb-3">
+                            <p class="text-secondary fs-14 fw-400 mb-2">تاريخ الارسال</p>
+                            <p class="text-primary fs-14 fw-500">12 مايو 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card-details mt-16">
+                            <div>
+                                <h6 class="text-primary">وصف التنبيه</h6>
+                            </div>
+                            <hr class="hr-card">
+                            <p class="text-secondary2 fs-14 fw-400 lh-lg">
+                                خلال الجولة الميدانية في منطقة A يوم 12 يناير 2025، تم اكتشاف مشكلة في أنظمة التكييف في المبنى رقم 5، حيث لاحظ الفريق أن درجة الحرارة في بعض الغرف تتجاوز المعدلات الطبيعية، مما أدى إلى شكاوى من الموظفين والمستخدمين. بعد فحص النظام، تبين أن بعض الوحدات بحاجة إلى صيانة فورية. تم الاتصال بفريق الصيانة وتم اتخاذ الإجراءات اللازمة لإصلاح الأعطال، حيث تم استبدال الفلاتر وتنظيف الوحدات.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-details mt-16">
+                    <div>
+                        <h6 class="text-primary">ملفات التنبيه</h6>
+                    </div>
+                    <hr class="hr-card">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex bg-white rounded p-2">
+                                <img class="h-40 ms-2" src="image/image-file.png" alt="no-image">
+                                <div>
+                                    <p class="text-primary fs-12 fw-400">الأدلة والشواهد الميدانية</p>
+                                    <p class="text-secondary fs-12 fw-400 mb-2">1,2MB</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MAIN CONTENT -->
+
+         <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-gray d-flex flex-column align-items-start">
+          <h5 class="text-primary fs-18" id="exampleModalLabel">رسالة رفض</h5>
+        </div>
+        <div class="modal-body">
+            <div class="d-flex justify-content-center mb-3">
+                <img height="140" src="image/refuse-image.png" alt="no-image">
+            </div>
+            <h6 class="text-primary fs-18 fw-500 text-center mb-2">هل انت متاكد من رفض التقرير؟</h6>
+            <p class="text-secondary fs-14 fw-400 text-center mb-3">بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+            <form class="row g-3">
+                <div class="col-12">
+                    <label for="validationDefault04" class="form-label fs-14 fw-500 text-primary">سبب الرفض
+                        <span class="text-red">*</span>
+                    </label>
+                    <select class="form-select w-100 fs-12 fw-400 text-primary bg-gray" id="validationDefault04" required>
+                      <option selected disabled class="text-secondary" value="">اختر سبب الرفض</option>
+                      <option>السبب 1</option>
+                      <option>السبب 2</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <div class="change-direction">
+                        <label for="validationTextarea" class="form-label fs-14 fw-500 text-primary">ملاحظات </label>
+                        <textarea class="form-control fs-12 fw-400 text-secondary bg-gray h-150" id="validationTextarea" placeholder=" أضف ملاحظات عن سبب رفض المهمة" required></textarea>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-between border-top pt-3 mt-4">
+                    <button type="button" class="view border-0" data-bs-dismiss="modal">الغاء</button>
+                    <button type="submit" class="main-button">رفض التقرير</button>
+                  </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+     <!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-gray d-flex flex-column align-items-start">
+          <h5 class="text-primary fs-18" id="exampleModalLabel">رسالة تاكيد</h5>
+        </div>
+        <div class="modal-body">
+            <div class="d-flex justify-content-center mb-3">
+                <img height="140" src="image/accept-image.png" alt="no-image">
+            </div>
+            <h6 class="text-primary fs-18 fw-500 text-center mb-2">هل انت متاكد من اعتماد التقرير؟</h6>
+            <p class="text-secondary fs-14 fw-400 text-center  mb-2">بمجرد تأكيد هذا الإجراء، لن تتمكن من التراجع.</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-between pt-3">
+            <button type="button" class="view border-0" data-bs-dismiss="modal">الغاء</button>
+            <button type="submit" class="main-button">تاكيد الاعتماد</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-1.10.1.min.js"></script> 
+    <script src="js/chart.min.js"></script> 
+    <script src="https://cdn.datatables.net/2.1.2/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/2.1.2/js/dataTables.bootstrap5.min.js"></script> 
+    <script src="js/main.js"></script> 
+    <script src="js/plugin.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+    <script>
+
+
+    </script>
+
+</body>
+
+</html>
