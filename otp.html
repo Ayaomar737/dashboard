@@ -44,12 +44,11 @@
                         <p class="text-secondary2 fs-14 fw-400 mb-4">تم إرسال رمز التحقق إلى رقم هاتفك +966 12** **** *** ، يرجى إدخال الرمز لتأكيد العملية</p>
                         <form class="row g-3">
                             <div class="col-12">
-                                <label for="validationDefaultUsername" class="form-label fs-14 fw-500 text-primary">رقم الجوال
-                                    <span class="text-red">*</span>
-                                </label>
-                                <div class="input-group">
-                                  <input type="text" class="form-control fs-12 fw-400 text-secondary text-start bg-gray" id="validationDefaultUsername" placeholder="00"  aria-describedby="inputGroupPrepend2" required>
-                                  <span class="input-group-text border-0 fs-12 fw-400 text-primary bg-gray" id="inputGroupPrepend2">+966</span>
+                                <div class="otp-container">
+                                    <input type="text" maxlength="1" class="otp-input" id="otp1">
+                                    <input type="text" maxlength="1" class="otp-input" id="otp2">
+                                    <input type="text" maxlength="1" class="otp-input" id="otp3">
+                                    <input type="text" maxlength="1" class="otp-input" id="otp4">
                                 </div>
                               </div>
                               <div class="col-12">
@@ -79,6 +78,53 @@
     <script src="js/plugin.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js" integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+
+    <script>
+        // Focus on the next input when a digit is entered
+        const otpInputs = document.querySelectorAll('.otp-input');
+    
+        otpInputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                // Automatically move to the next input if a number is entered
+                if (e.target.value.length === 1 && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
+            });
+    
+            // Allow only numeric input
+            input.addEventListener('keypress', (e) => {
+                if (!/[0-9]/.test(e.key)) {
+                    e.preventDefault();
+                }
+            });
+        });
+    
+        // Function to get the OTP as a string
+    
+    
+        function getOTP() {
+            const otp = Array.from(otpInputs).map(input => input.value).join('');
+            console.log(otp);
+            return otp;
+        }
+    
+        // Example usage: Get OTP and check validity
+        function validateOTP() {
+            const otp = getOTP();
+            if (otp.length === 6 && /^\d{6}$/.test(otp)) {
+                alert('OTP is valid: ' + otp);
+            } else {
+                alert('Please enter a valid 6-digit OTP');
+            }
+        }
+    
+        // For testing: Validate OTP when pressing "Enter"
+        otpInputs[otpInputs.length - 1].addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') {
+                validateOTP();
+            }
+        });
+    </script>
 
 
 </body>
